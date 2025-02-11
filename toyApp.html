@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page - Toys Market</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            text-align: center;
+            padding: 40px;
+            border-radius: 20px;
+            background: white;
+            box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .btn {
+            width: 200px;
+            height: 80px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+        }
+        .btn i {
+            font-size: 28px;
+            margin-right: 10px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+        }
+        .btn-success {
+            background-color: #28a745;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        .btn-success:hover {
+            background-color: #218838;
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 576px) {
+            .btn-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎁 Welcome to Toys Market</h1>
+        <p class="text-muted">Manage your toy collection and users efficiently.</p>
+        
+        <!-- כפתורים זה לצד זה -->
+        <div class="btn-container">
+            <a href="toys.html" class="btn btn-primary">
+                <i class="fas fa-shopping-cart"></i> Manage Toys
+            </a>
+            <a href="users.html" class="btn btn-success">
+                <i class="fas fa-users"></i> Manage Users
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
